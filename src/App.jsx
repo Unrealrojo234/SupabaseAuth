@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 
-const supabaseUrl = "https://gtygqabysomtazoewxrq.supabase.co";
+const supabaseUrl = import.meta.env.VITE_REACT_API_SUPABASE_URL;
 const supabaseKey = import.meta.env.VITE_REACT_API_SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 

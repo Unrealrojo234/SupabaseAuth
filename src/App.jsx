@@ -35,7 +35,7 @@ export default function App() {
             maxWidth: "32rem",
             display: "block",
             margin: "auto",
-            border: "2px solid #222428",
+            border: "2px solid white",
             padding: "12px",
             borderRadius: "12px",
           }}

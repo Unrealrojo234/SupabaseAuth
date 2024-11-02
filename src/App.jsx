@@ -27,7 +27,23 @@ export default function App() {
   }, []);
 
   if (!session) {
-    return <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />;
+    return (
+      <div>
+        <h1 style={{ textAlign: "center", color: "green" }}>Tech It Up</h1>
+        <div
+          style={{
+            maxWidth: "32rem",
+            display: "block",
+            margin: "auto",
+            border: "2px solid #222428",
+            padding: "12px",
+            borderRadius: "12px",
+          }}
+        >
+          <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />
+        </div>
+      </div>
+    );
   } else {
     return <div>Logged in!</div>;
   }
